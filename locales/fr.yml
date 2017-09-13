@@ -1,0 +1,166 @@
+navbar:
+  about: A propos
+  skills: Compétences
+  experiences: Expériences
+  contact: Contact
+
+me:
+  title: >
+         Bastien DINE<br>
+         Ingénieur Informatique<br>
+         Big Data / Sysadmin / FullStack<br><br>
+about:
+  title:
+  bigdata:
+    title: Architecte Big Data
+    desc: >
+          Conception d'architecture Big Data<br>
+          Ingénieurie & industrialisation<br>
+          Coaching des équipes<br>
+  system:
+    title: Ingénieur Système
+    desc: >
+          Architecture & Administration de solutions complexes<br>
+          Middleware & flux de données<br>
+          Mise en place d'architecture web en haute-dispo <br>
+          Automatisation des tâches<br>
+
+  programming:
+    title: Développeur FullStack Back-end
+    desc: >
+        Full Stack : Front-end &rArr; Système<br>
+        Développement web PHP, Symfony<br>
+        Développement Back-end Java<br>
+        Gestion de projet Agile Scrum<br>
+
+skills:
+  title: Compétences
+  desc: Mes principales compétences
+  bigdata:
+    title: Technologies BigData
+    desc: Quelques technologies BigData que j'utilise dans mes architectures
+    cassandra: Cassandra
+    es: ElasticSearch
+    storm: Storm
+    spark: Spark
+
+  system:
+    title: Système
+    desc: Administration système, automatisation & industrialisation des architectures
+    linux: Linux
+    scripting: Shell scripting
+    ansible: Ansible
+
+  programming:
+    title: Programmation
+    desc: Concevoir est inutile si on ne peut pas implémenter
+    php: PHP
+    java: Java
+    web: HTML / JS / CSS
+    git: GIT
+
+  language:
+    title: Langues
+    desc: Lu / Ecrit / Parlé
+    french: Français
+    english: Anglais
+    italian: Italien
+
+experiences:
+  title: Expériences
+  desc: Mes expériences professionnelles et formations
+  more: Plus de détails
+  prepa:
+    title: CPGE MPSI / MP
+    date: 2008-2010
+    location: Lycée Saint Rémi
+    details:
+
+  esisar:
+    title: Diplôme d'ingénieur, informatique & réseau
+    date: 2010-2013
+    location: Grenoble INP - ESISAR
+    details:
+
+  ensimag:
+    title: Spécialisation Sécurité, cryptologie et codage de l'information
+    date: 2012-2013
+    location: Grenoble INP - ENSIMAG
+    details:
+
+  coservit_full_stack:
+    title: FullStack Engineer
+    date: 09/2013 - 01/2017
+    location: Coservit, Grenoble
+    resume: >
+            Développeur FullStack sur la solution de supervision ServiceNav<br>
+            Architecte et administrateur système / middleware et flux de données
+    details: >
+            &rArr; Développement FullStack
+            <br>
+            &bull; Front / Back office de la partie Web (HTML, Javascript, PHP, Symfony)<br>
+            &bull; Système / couche basse des composants de toute la chaine de supervision (Shell scripting, Perl)<br>
+            &bull; Intégration de données & développement de statistiques (ETL Talend)
+            <br><br>
+            &rArr; Architecture & Administration<br>
+            &bull; Conception de l’architecture de la solution<br>
+            &bull; Interopérabilité des différentes briques : intégration et centralisation des flux de données<br>
+            &bull; Conception et optimisation base de données MySQL<br>
+            &bull; Mise en place architecture web apache& webservice REST<br>
+            &bull; Support système et automatisation de la configuration des 800 serveurs de la plateforme Saas
+            <br><br>
+            &rArr; Conduite de projet et software management
+            <br>
+            &bull; Processus de développement Agile / Scrum<br>
+            &bull; Analyse / décomposition des problématiques & conception des différentes solutions<br>
+            &bull; Contribution à la mise en place des processus, outils et environnements de développement et versionning (GIT (Stash), JIRA, PHPStorm)
+
+  coservit_big_data:
+    title: Big Data Architect / Lead System Engineer / @Lab Team
+    date: 08/2016 - Present
+    location: Coservit, Grenoble
+    resume: >
+             Architecte Big Data<br>
+             Lead Ingénieur BackEnd & Système
+    details: >
+             &rArr; Conception et implémentation d'architecture Lambda
+             <br><br>
+             &rArr; Stockage de données - Cassandra :<br>
+             &bull; Conception du data model “query driven” et dénormalisé<br>
+             &bull; Exploitation et scalabilité du cluster de production<br><br>
+              &rArr; Stockage des données brutes & backup avec Hadoop HDFS<br>
+                          <br>
+                           &rArr; Recherche et aggrégation de données
+                                       en temps réel - ElasticSearch<br><br>
+             &rArr; Traitement en temps réel distribué - Storm :<br>
+             &bull; Développement en Java avec injection de dépendance (Guice) et tests unitaires (JUnit, Mockito...)<br>
+             &bull; Conception et scalabilité du cluster de production <br>
+             <br>
+
+
+             &rArr; Data science - Spark  :<br>
+             &bull; Algorithme de Machine learning avec MLib<br>
+             &bull; Traitement en streaming avec le Structured Streaming<br>
+             <br>
+             &rArr; Automisation IT :<br>
+              &bull; Déploiement de l'infrastructure avec Ansible pour les différents composants : rabbitmq, zookeeper, storm, cassandra, hdfs, spark<br>
+             <br>
+             &rArr; Mise en place d'architecture Web robuste (loadbalancing, web server clustering, fail-over)<br>
+             <br>
+             &rArr; Scrum Master de la Lab Team<br>
+contact:
+  title: Contactez-moi
+  desc: >
+        Merci d'avoir visité mon profil<br>
+        N'hésitez pas à me contacter, je serai ravi de pouvoir échanger avec vous !
+  mail : Par mail
+  network: Sur les réseaux sociaux
+  address: Adresse
+
+cv:
+  desc: Si mon profil vous intéresse, vous pouvez télécharger mon CV
+  url: /resources/fr/cv_Bastien_DINE.pdf
+
+footer: Developpé avec PHP, Silex & Bootstrap
+
+

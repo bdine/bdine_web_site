@@ -1,0 +1,168 @@
+navbar:
+  about: about
+  skills: Skills
+  experiences: Experiences
+  contact: Contact
+
+me:
+  title: >
+         Bastien DINE<br>
+         Computer Science Engineer<br>
+         Big Data / Sysadmin / FullStack<br><br>
+about:
+  title:
+  bigdata:
+    title: Big Data Architect
+    desc: >
+          Big Data Architecture Design & Implementation<br>
+          Engineering & industrialization<br>
+          Team coaching<br>
+  system:
+    title: System Engineer
+    desc: >
+          Complex software Administration<br>
+          Middleware & dataflow<br>
+          High availability web system design<br>
+          Task automation<br>
+
+  programming:
+    title: FullStack Back-end Developer
+    desc: >
+        Full Stack : Front-end &rArr; System<br>
+        PHP, Symfony Web Development<br>
+        Java Back-end Development<br>
+        Scrum Agile project management
+
+skills:
+    title: Skills
+    desc: My skills in a nutshell
+    bigdata:
+      title: BigData Technologies
+      desc: Severals BigData technologies I am using
+      cassandra: Cassandra
+      es: ElasticSearch
+      storm: Storm
+      spark: Spark
+
+    system:
+      title: System
+      desc: Administration, automation & industrialization
+      linux: Linux
+      scripting: Shell scripting
+      ansible: Ansible
+
+    programming:
+      title: Programming
+      desc: Designing is useless if one can not develop
+      php: PHP
+      java: Java
+      web: HTML / JS / CSS
+      git: GIT
+
+    language:
+      title: Language
+      desc: Read / Written / Spoken
+      french: French
+      english: English
+      italian: Italian
+
+
+experiences:
+
+  title: Experiences
+  desc: Professional experiences and education
+  more: More
+
+  prepa:
+    title: CPGE MPSI / MP
+    date: 2008-2010
+    location: Lycée Saint Rémi
+    details:
+
+  esisar:
+    title: Engineer degree in Computer Science & Network
+    date: 2010-2013
+    location: Grenoble INP - ESISAR
+    details:
+
+  ensimag:
+    title: M2P Security and Cryptology of Informatics System
+    date: 2012-2013
+    location: Grenoble INP - ENSIMAG
+    details:
+
+  coservit_full_stack:
+    title: FullStack Engineer
+    date: 09/2013 - 01/2017
+    location: Coservit, Grenoble
+    resume: >
+            Full Stack developer on ServiceNav monitoring software<br>
+            Software Architect, system administrator and data flow designer
+    details: >
+            &rArr; FullStack Development
+            <br>
+            &bull; Front / Back end Web (HTML, Javascript, PHP, Symfony)<br>
+            &bull; Lower level components of monitoring system (Shell scripting, Perl)<br>
+            &bull; Data integration & statistic development (ETL Talend)
+            <br><br>
+            &rArr; Architecture & Administration
+            <br>
+            &bull; Software architecture design<br>
+            &bull; Data Flow integration<br>
+            &bull; MySQL database design & optimization<br>
+            &bull; Web & REST webservice architecture implementation<br>
+            &bull; System Support and configuration automation of the 800 servers in Saas platform
+            <br><br>
+            &rArr; Software management
+            <br>
+            &bull; Agile Scrum Software Development <br>
+            &bull; GIT & continuous integration establishment contributor
+
+  coservit_big_data:
+    title: Big Data Architect / Lead System Engineer / @Lab Team
+    date: 08/2016 - Present
+    location: Coservit, Grenoble
+    resume: >
+             Architect & engineering of Big Data technologies<br>
+              Lead BackEnd & System Engineer
+    details: >
+             &rArr; Lambda architecture design & implementation
+             <br><br>
+             &rArr; Data storage - Cassandra :<br>
+             &bull; Data Model Analysis & Design using query driven and denormalization design pattern<br>
+             &bull; Ops and scalability of production cluster<br>
+             <br>
+             &rArr; Long-term Data storage & backup - Hadoop HDFS<br>
+             <br>
+              &rArr;Search & real-time aggregation - ElasticSearch<br>
+                          <br>
+             &rArr; Real time data processing - Storm   :<br>
+             &bull; Development in Java using dependancy injection (Guice) and unit testing (JUnit, Mockito...)<br>
+             &bull; Design & scalability analysis of production cluster<br>
+             <br>
+             &rArr; Data science - Spark  :<br>
+             &bull; Machine learning algorithm using  MLib<br>
+             &bull; Streaming processing using Dataframe Structured Streaming<br>
+             <br>
+
+             &rArr; IT Automation :<br>
+              &bull; Deployment automation with Ansible for following components  : rabbitmq, zookeeper, storm, cassandra, hdfs, spark<br>
+             <br>
+             &rArr; Web System Architecture (loadbalancing, web server clustering, fail-over)<br>
+             <br>
+             &rArr; Lab Team Scrum Master<br>
+
+contact:
+  title: Contact me
+  desc: >
+        Thank you for visiting my profile<br>
+        Please feel free to contact me, I will be happy to speak with you !
+  mail : Mail
+  network: Social networks
+  address: Address
+
+cv:
+  desc: If you are interested, do not hesitate to download my resume
+  url: /resources/en/resume_Bastien_DINE.pdf
+
+footer: Built with PHP, Silex & Bootstrap
