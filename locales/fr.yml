@@ -163,4 +163,40 @@ cv:
 
 footer: Developpé avec PHP, Silex & Bootstrap
 
-
+chatbot:
+  initial_message: Bienvenue sur mon site web ! Je peux vous guider si vous le souhaitez ou vous pouvez parcourir ma page librement, je serais caché en bas à droite..
+  questions:
+    name: Bonjour Bastien, je m'appelle NOM
+    you: Parle moi de toi..
+    availability: Quelles sont tes disponibilités ?
+    travel: Es-tu mobile et où peux-tu te déplacer ?
+    skills: Quelles sont tes compétences ?
+    experiences: Quelles sont tes dernières expériences ?
+    hobbies: As-tu des loisirs?
+  messages:
+    - inputs: [.*de toi.*, .*a propos.*, .*à propos.*]
+      output: >
+              Je m'appelle Bastien, ingénieur informatique, j'aime mettre en place toute la chaine d'une architecture applicative, de sa conception jusqu'à son industrialisation en passant par son développement.
+                Je suis curieux, autoditacte et je m'adapate facilement à un environnement.
+    - inputs: [.*disponible.*, .*disponibilités.*]
+      output: Je serais disponible à partir de Février / Mars 2018
+    - inputs: [.*compétence.*, .*competence.*]
+      output: >
+              Je suis spécialisé dans la mise en place d'architecture Big Data, l'administration système et automatisation IT ainsi que le développement FullStack, orienté BackEnd. <br>
+              Pour connaitre <a href="#skills">quelques technologies que je maitrise dans ces domaines</a>
+    - inputs: [.*mobile.*, .*mobilité.*, .*déplacement.*, .*deplacement.*, .*déplacer.*, .*deplacer.*]
+      output: >
+              Je suis basé principalement à Grenoble, mais je peux me déplacer dans toute la France si les missions m'intéressent.
+              <br>N'hésitez pas à me contacter par mail pour en savoir plus
+    - inputs: [.*expérience.*, .*experience.*, .*travail.*, .*mission.*]
+      output: >
+              Je suis actuellement en mission en tant qu'architecte Big Data & ingénieur backend - système à Grenoble. Je suis en charge de la migration de l'architecture d'un soft vers une architecture Big Data<br>
+              Voici <a href="#experiences">mes expériences plus en détail</a>
+    - inputs: [.*loisir.*, .*hobbies.*]
+      output: >
+              J'aime bien tout ce qui touche à la montagne (marche l'été, snowboard l'hiver), je prends mon vélo dès que l'occasion se présente, je joue aussi de la guitare, et aux jeux vidéos.
+  name_message:
+    input: Bonjour Bastien, je m'appelle {name}
+    output: Bonjour %name%, moi c'est Bastien, enchanté de vous rencontrer ! Je peux répondre à vos questions si vous avez besoin d'aide
+  fallback_message: Désolé je ne comprends pas votre demande, vous pouvez utiliser la liste de suggestions, ou si vous ne trouvez pas ce que vous cherchez sur mon site, n'hésitez pas à me contacter par mail bastien.dine@gmail.com
+  send: Envoyer

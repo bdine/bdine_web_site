@@ -1,0 +1,42 @@
+<div id="chat-div" class="chat-div container">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+                    <div class="btn-group pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapseOne">
+                    <input id="initial-message" type="hidden" data-msg="{% trans %}chatbot.initial_message{% endtrans %}">
+                    <input id="botman-ask-route" type="hidden" data-route="{{ path('chatbot_ask') }}">
+
+                    <div class="panel-body">
+                        <ul id="chat-conversation" class="chat">
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input list="bieres" onfocus="this.select();" id="chatbot-textbox" type="text" class="form-control input-sm" placeholder="" />
+                            <datalist id="bieres">
+                                <option value="{% trans %}chatbot.questions.name{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.you{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.availability{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.travel{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.skills{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.experiences{% endtrans %}">
+                                <option value="{% trans %}chatbot.questions.hobbies{% endtrans %}">
+                            </datalist>
+                            <span class="input-group-btn">
+                            <button class="btn btn-sm" id="chatbot-btn">{% trans %}chatbot.send{% endtrans %}</button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

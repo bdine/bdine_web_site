@@ -7,7 +7,6 @@ use Symfony\Component\Translation\Loader\YamlFileLoader;
 ErrorHandler::register();
 ExceptionHandler::register();
 
-
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
 ));
@@ -34,3 +33,10 @@ $app->extend('translator', function($translator, $app) {
     $translator->addResource('yaml', __DIR__.'/../locales/fr.yml', 'fr');
     return $translator;
 });
+
+$app->register(new Silex\Provider\LocaleServiceProvider());
+
+$app->register(new Silex\Provider\ServiceControllerServiceProvider());
+
+require __DIR__.'/botman.php';
+require __DIR__.'/services.php';

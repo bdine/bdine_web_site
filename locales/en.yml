@@ -166,3 +166,41 @@ cv:
   url: /resources/en/resume_Bastien_DINE.pdf
 
 footer: Built with PHP, Silex & Bootstrap
+
+chatbot:
+  initial_message: Welcome on my website ! I can help you or you can just go freely through my page, i will be hidden in the bottom right corner..
+  questions:
+    name: Hi Bastien, my name is NAME
+    you: Let's talk about you
+    availability: When will you be available ?
+    travel: Where can you travel ?
+    skills: What are your skills ?
+    experiences: What are your last experiences ?
+    hobbies: What are your hobbies ?
+  messages:
+    - inputs: [.*about you.*, .*about yourself*]
+      output: >
+             I am Bastien, computer science engineer, I like to work on every aspect of a software architecture from design to production installation through the software development<br>
+             I am a curious, self-taught person and I easily adapt myself to new
+    - inputs: [.*available.*, .*availability.*]
+      output: I will be available from March 2018
+    - inputs: [.*skill.* ]
+      output: >
+          I am specialized in big data architecture, system administration & IT automation, as well as FullStack, Back-end oriented development.<br>
+          You can know more about <a href="#skills">some of my main skills here</a>
+    - inputs: [.*travel.*]
+      output: >
+            I work mainly in Grenoble, but I can move all over the France (maybe the world)<br>
+            Feel free to contact me by mail to know more
+    - inputs: [.*experience.*, .*travail.*, .*mission.*]
+      output: >
+          I currently work as Big Data architect & back-end / system engineer in Grenoble. I am in charge of the migration of a classic software architecture to a Big Data architecture. <br>
+              Here <a href="#experiences"> are my experience in details</a>
+    - inputs: [.*hobby.* .*hobbies.*]
+      output: >
+          I like whatever related to mountain (walk by summer, snowboard in winter), I use my bike everytime I can, I play guitar and also video game.
+  name_message:
+    input: Hi Bastien, my name is {name}
+    output: Hello %name%, i am Bastien, nice to meet you ! I can help you if you have any questions
+  fallback_message: Sorry I did not understand your request, you can use suggestions list or contact me directly by mail (bastien.dine@gmail.com) if you can not find what you want here.
+  send: Send

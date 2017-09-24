@@ -10,16 +10,5 @@ $app->get('/main', function() use ($app)  {
         'main.html.twig'
     );
 })->bind("main");
-/*
 
-$app->get('/skills', function() use ($app)  {
-    return $app['twig']->render(
-        'skills.html.twig'
-    );
-})->bind("skills");
-
-$app->get('/experiences', function() use ($app)  {
-    return $app['twig']->render(
-        'experiences.html.twig'
-    );
-})->bind("experiences");*/
+$app->post('/chatbot/ask', "chatbot.controller:askQuestion")->bind("chatbot_ask");
